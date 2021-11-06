@@ -6,7 +6,7 @@
 
 "SyntaxError: Identifier 'port' has already been declared" Done by 更新79-81行
 
-"Error: listen EADDRINUSE: address already in use :::3000" 没解决
+"Error: listen EADDRINUSE: address already in use :::3000" 没解决，他俩不能都听local 3000吗？
 
 3.Glitch deploy failed “cannot get” https://cloud-collector-test.glitch.me/
 

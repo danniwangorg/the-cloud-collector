@@ -1,5 +1,4 @@
-1.在index.js里34-48行, 可以在新route里只显示一组数据
-但data route里的数据不知道为什么不更新了，所以sort出来的一组数据不是最新的
+1.在index.js里34-48行, 可以在新route里只显示一组数据。但data route里的数据不知道为什么不更新了，所以sort出来的一组数据不是最新的
 
 2.Glitch deploy failed “cannot get” https://cloud-collector-test.glitch.me/
 

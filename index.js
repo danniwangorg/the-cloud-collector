@@ -32,19 +32,17 @@ app.get('/data', (request, res) => {
 });
 
 //Send LatestData Route
-app.get('/latestData', (request, res) => {
+app.get('/lastData', (request, res) => {
     db.find({}, (err, docs) => {
         if (err) {
             res.json({ task: "task failed" });
         } else {
             //1. get timestamp of all images
-            let timestampData = new Array();
-
+            let obj = docs;
             //2. compare timestamp of all images (need to sort them)
+            let sort_array = obj.sort((a, b) => b.updatedAt - a.updatedAt);
             //3. return the latest image
-            timestampData.sort(function(x, y) {
-                return x.timestampData - y.timestampData;
-            })
+            res.json(sort_array[sort_array.length - 1]);
         }
     });
 });
@@ -71,16 +69,16 @@ app.listen(port, () => {
 });
 
 // //Initialize the express 'app' object
-// let express = require('express');
-// let app = express();
+// // let express = require('express');
+// // let app = express();
 // app.use('/', express.static('public'));
 
 // //Initialize the actual HTTP server
 // let http = require('http');
 // let server = http.createServer(app);
-// let port = process.env.PORT || 3000;
+// let listenport = process.env.PORT || 3000;
 // server.listen(port, () => {
-//     console.log("Server listening at port: " + port);
+//     console.log("Server listening at port: " + listenport);
 // });
 
 // //Initialize socket.io

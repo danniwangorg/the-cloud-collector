@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cloud Collector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="/play_page/index.html"><button>Play</button></a>
+    </header>
+    <div class="container">
+        <h1>A Cloud A Day</h1>
+        <form action="/action_page.php">
+            <div class="input-box">
+                <label for="cloud-input">Description</label>
+                <input placeholder="My cloud looks like..." id="cloud-input" type="text">
+            </div>
+            <div class="date-box">
+                <label for="cloud-date">Date</label>
+                <input type="date" id="cloud-date" name="cloud-date">
+            </div>
+            <div class="loc-box">
+                <label for="cloud-loc">Location</label>
+                <input placeholder="I found it at/in/on..." id="cloud-loc" type="text">
+            </div>
+            <div class="img-box">
+                <input type="file" id="cloud-img" name="cloud-img" accept="image/*" onchange='openFile(event)'>
+                <img id='cloud-output'>
+            </div>
+        </form>
+        <a href="/display_page/index.html"><button id="collect-btn">Collect</button></a>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

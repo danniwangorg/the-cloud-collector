@@ -1,0 +1,71 @@
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+body {
+    background-image: url("/assets/bk-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    height: 34px;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.input-box {
+    padding-top: 20px;
+}
+
+.date-box {
+    padding-top: 20px;
+}
+
+.loc-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container {
+    margin-top: 6em;
+    text-align: center;
+}
+
+#cloud-img {
+    padding-left: 100px;
+}
+
+#collect-btn {
+    padding: 0 15px;
+}
+
+#cloud-output {
+    margin-top: 20px;
+    height: 220px;
+    width: 360px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 800px) {
+    header {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}

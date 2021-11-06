@@ -2,11 +2,11 @@
 
 2.在index.js里，socket.io部分(71-112行）跟node.js的部分（1-70行）无法一起运行
 
-Done by 注掉72 73行 "SyntaxError: Identifier 'express' has already been declared"
+"SyntaxError: Identifier 'express' has already been declared" Done by 注掉72 73行
 
-Done by 更新79-81行 "SyntaxError: Identifier 'port' has already been declared"
+"SyntaxError: Identifier 'port' has already been declared" Done by 更新79-81行
 
-没解决 "Error: listen EADDRINUSE: address already in use :::3000"
+"Error: listen EADDRINUSE: address already in use :::3000" 没解决
 
 3.Glitch deploy failed “cannot get” https://cloud-collector-test.glitch.me/
 

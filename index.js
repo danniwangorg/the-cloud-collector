@@ -40,7 +40,7 @@ app.get('/latest_data', (request, res) => {
             //1. get timestamp of all images
             let obj = docs;
             //2. compare timestamp of all images (need to sort them)
-            let sort_array = obj.sort((a, b) => b.updatedAt - a.updatedAt);
+            let sort_array = obj.sort((a, b) => a.updatedAt - b.updatedAt);
             //3. return the latest image
             res.json(sort_array[sort_array.length - 1]);
         }

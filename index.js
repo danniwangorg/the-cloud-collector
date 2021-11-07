@@ -31,8 +31,8 @@ app.get('/data', (request, res) => {
     });
 });
 
-//Send LatestData Route
-app.get('/lastData', (request, res) => {
+//Send Latest Data Route
+app.get('/latest_data', (request, res) => {
     db.find({}, (err, docs) => {
         if (err) {
             res.json({ task: "task failed" });

@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
 
-    fetch('/latestData')
+    fetch('/latest_data')
         .then(response => response.json())
         .then(data => {
             console.log(data);

@@ -1,6 +1,6 @@
 1.display lastest data
 
-【未解决】可以sort出最新数据，在/latest_data显示，但/display_page没有得到数据，具体请查看/public/display_page/app.js
+【未解决】可以sort出最新数据，在/latest_data显示，但/display_page没有得到数据，具体得到数据的内容请查看/public/display_page/app.js
 
 【已解决】在index.js里34-48行, 可以在新route里只显示一组数据。但data route里的数据不知道为什么不更新了，所以sort出来的一组数据不是最新的
 

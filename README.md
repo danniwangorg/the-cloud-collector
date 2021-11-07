@@ -8,9 +8,9 @@
 
 【未解决】"Error: listen EADDRINUSE: address already in use :::3000" 他俩不能都听local 3000吗？
 
-【已解决】"SyntaxError: Identifier 'express' has already been declared" 注掉72 73行
-
 【已解决】"SyntaxError: Identifier 'port' has already been declared" 更新79-81行
+
+【已解决】"SyntaxError: Identifier 'express' has already been declared" 注掉72 73行
 
 3.Glitch deploy failed “cannot get” https://cloud-collector-test.glitch.me/
 

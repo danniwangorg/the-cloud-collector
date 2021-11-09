@@ -76,7 +76,7 @@ app.use('/', express.static('public'));
 //Initialize the actual HTTP server
 let http = require('http');
 let server = http.createServer(app);
-let listenport = 5000;
+let listenport = process.env.PORT || 5000;
 server.listen(listenport, () => {
     console.log("Server listening at port: " + listenport);
 });

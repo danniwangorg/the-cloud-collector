@@ -76,7 +76,8 @@ app.listen(port, () => {
 //Initialize the actual HTTP server
 let http = require('http');
 let server = http.createServer(app);
-let listenport = process.env.PORT || 5000;
+// let listenport = process.env.PORT || 5000;
+let listenport = 5000;
 server.listen(listenport, () => {
     console.log("Server listening at port: " + listenport);
 });

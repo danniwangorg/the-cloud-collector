@@ -1,6 +1,6 @@
-1.Glitch deploy failed “cannot get” https://cloud-collector-test.glitch.me/
+1.Glitch deploy failed “cannot get” https://cloud-test3.glitch.me/
 
-【In progress】和tutorial里stage1和2是一样的,stage3这一步我的github里没有node_modules,我在想是不是和这个有关系？或者是因为我的public里的html是套在文件夹里的所以没办法get？
+【In progress】和tutorial里stage1和2是一样的,stage3这一步我的github里没有node_modules,我在想是不是和这个有关系？但glitch左下角的App Status是绿色的Ok,所以感觉也不是这个问题；或者是因为我的public里的html是套在文件夹里的所以没办法get？
 
 tutorial https://docs.google.com/document/d/1ga6NfyIRu5k4VG7m1qzdeEWrBFVIexqoHr_ZkNXpIz0/edit?usp=sharing
 

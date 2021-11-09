@@ -68,10 +68,10 @@ app.listen(port, () => {
     console.log('listening at ', port);
 });
 
-//Initialize the express 'app' object
+// //Initialize the express 'app' object
 // let express = require('express');
 // let app = express();
-app.use('/', express.static('public'));
+// app.use('/', express.static('public'));
 
 //Initialize the actual HTTP server
 let http = require('http');

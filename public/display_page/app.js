@@ -4,9 +4,8 @@ window.addEventListener("load", () => {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-
-            let cloudData = data[0];
-
+            // let cloudData = data[0];
+            let cloudData = data;
             let InputDisplay = document.getElementById('input-display');
             InputDisplay.append(cloudData.cloud);
             let DateDisplay = document.getElementById('date-display');
